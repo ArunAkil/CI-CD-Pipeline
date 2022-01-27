@@ -33,21 +33,23 @@ public class calculators extends HttpServlet {
               PrintWriter out = response.getWriter();
                 String n1 = request.getParameter("txt1");
                 String n2 = request.getParameter("txt2");
+                String total = " ";
                 String op = request.getParameter("op"); 
                
                 
                 if(op.equals("Addition")){
-                     out.println((Integer.parseInt(n1) + Integer.parseInt(n2)));
+                    total = Integer.parseInt(n1) + Integer.parseInt(n2);
                 }
                 else if(op.equals("Subtraction")){
-                     out.println(Integer.parseInt(n1) - Integer.parseInt(n2));
+                     total = Integer.parseInt(n1) - Integer.parseInt(n2);
                 }
                 else if(op.equals("multiplication")){
-                     out.println(Integer.parseInt(n1) * Integer.parseInt(n2));
+                     total = Integer.parseInt(n1) * Integer.parseInt(n2);
                 }
                 else{
-                    out.println(Integer.parseInt(n1) / Integer.parseInt(n2));
+                    total = Integer.parseInt(n1) / Integer.parseInt(n2);
                 }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
