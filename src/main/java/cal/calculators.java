@@ -40,22 +40,22 @@ public class calculators extends HttpServlet {
                 if(op.equals("Addition")){
                      out.println((Integer.parseInt(n1) + Integer.parseInt(n2)));
                     total = Integer.parseInt(n1) + Integer.parseInt(n2);
-                    txt3.setText(total);
+                
                 }
                 else if(op.equals("Subtraction")){
                      out.println((Integer.parseInt(n1) + Integer.parseInt(n2)));
                      total = Integer.parseInt(n1) - Integer.parseInt(n2);
-                    txt3.setText(total);
+                   
                 }
                 else if(op.equals("multiplication")){
                      out.println((Integer.parseInt(n1) + Integer.parseInt(n2)));
                      total = Integer.parseInt(n1) * Integer.parseInt(n2);
-                    txt3.setText(total);
+                    
                 }
                 else{
                      out.println((Integer.parseInt(n1) + Integer.parseInt(n2)));
                     total = Integer.parseInt(n1) / Integer.parseInt(n2);
-                    txt3.setText(total);
+                    
                 }
         
     }
