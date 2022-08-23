@@ -33,6 +33,7 @@ public class calculators extends HttpServlet {
               PrintWriter out = response.getWriter();
                 String n1 = request.getParameter("txt1");
                 String n2 = request.getParameter("txt2");
+         String total = request.setParameter("txt3");
                 String op = request.getParameter("op"); 
                
                 
